@@ -14,7 +14,7 @@ export default function Header() {
         Blog
       </Link>
 
-      <form>
+      <form autoComplete="on">
         <TextInput
           type="text"
           placeholder="Search..."

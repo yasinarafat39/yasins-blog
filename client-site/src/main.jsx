@@ -19,28 +19,32 @@ import Projects from './pages/Projects';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home></Home>
+    element: <Home></Home>,
+    children: [
+      {
+        path: '/signin',
+        element: <Signin></Signin>
+      },
+      {
+        path: '/signUp',
+        element: <SignUp></SignUp>
+      },
+      {
+        path: '/about',
+        element: <About></About>
+      },
+      {
+        path: '/projects',
+        element: <Projects></Projects>
+      },
+      {
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>
+      },
+    ]
   },
-  {
-    path: '/dashboard',
-    element: <Dashboard></Dashboard>
-  },
-  {
-    path: '/signin',
-    element: <Signin></Signin>
-  },
-  {
-    path: '/signUp',
-    element: <SignUp></SignUp>
-  },
-  {
-    path: '/about',
-    element: <About></About>
-  },
-  {
-    path: '/projects',
-    element: <Projects></Projects>
-  },
+
+
 ])
 
 
