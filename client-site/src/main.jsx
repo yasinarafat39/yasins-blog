@@ -12,6 +12,7 @@ import Dashboard from '../src/pages/Dashboard'
 import Signin from './pages/Signin';
 import SignUp from './pages/SignUp';
 import About from './pages/About';
+import Projects from './pages/Projects';
 
 
 
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: '/about',
     element: <About></About>
+  },
+  {
+    path: '/projects',
+    element: <Projects></Projects>
   },
 ])
 
