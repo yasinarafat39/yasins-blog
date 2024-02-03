@@ -1,0 +1,17 @@
+{
+  "name": "server-site",
+  "version": "1.0.0",
+  "description": "Yasin's Blog is a personal blogging website.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Yasin Arafat",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3"
+  }
+}

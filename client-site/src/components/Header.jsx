@@ -27,18 +27,20 @@ export default function Header() {
         <AiOutlineSearch />
       </Button>
 
+
       <div className="flex gap-2 md:order-2">
         <Button className="w-12 h-10 hidden sm:inline" color="gray" pill>
           <FaMoon />
         </Button>
 
         <Link to="/signin">
-          <Button gradientDuoTone="greenToBlue">
+          <Button outline gradientDuoTone="greenToBlue">
             Sign In
           </Button>
         </Link>
         <NavbarToggle></NavbarToggle>
       </div>
+
 
       <Navbar.Collapse>
         <Navbar.Link active={path === "/"} as={"div"}>
